@@ -8,7 +8,7 @@
           <div>DNI: <input v-model="dni" required></div><br>
           <button v-on:click="afegeixElement()">Afegir persona</button>
           <br><h4>Llista: </h4>
-          <Person v-on:eliminarElement="eliminarElement(idx)" v-for="(a, idx) in this.$store.getters.getLlista" :key="idx" :name="a.name" :llin1="a.llin1" :llin2="a.llin2" :dni="a.dni"></Person>
+          <Person v-on:eliminarElement="eliminarElement(idx)" v-for="(a, idx) in $store.getters.getLlista" :key="idx" :name="a.name" :llin1="a.llin1" :llin2="a.llin2" :dni="a.dni"></Person>
       </center>
   </div>
 </template>
